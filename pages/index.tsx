@@ -45,28 +45,34 @@ export default function Index() {
                 <img
                     className={classes.backgroundCover}
                     alt={''} src={'https://cdn1.tripoto.com/assets/2.3/img/home_banner.jpg'}/>
-                <div className={classes.header}>
-                    <div className={'row'}>
+                <Grid className={classes.header} container direction="row"
+                      justify="space-between"
+                      alignItems="center">
+                    <Grid item>
                         <img src={'https://cdn1.tripoto.com/assets/2.3/img/logo/tripoto.svg'} className={classes.logo}
                              alt={'logo'}/>
-                        <div>
-
+                    </Grid>
+                    <Grid item>
+                        <Grid container spacing={4}>
+                            <Grid item>
                                 <Typography variant="h6" component="h6" className={classes.menuItem}>
                                     Inspirations
                                 </Typography>
+                            </Grid>
+                            <Grid item>
                                 <Typography variant="h6" component="h6" className={classes.menuItem}>
                                     Inspirations
                                 </Typography>
-
-                        </div>
-                    </div>
-                    <Typography variant="h3" component="h1" className={classes.sloganSearch}>
-                        The Global Community of Travellers
-                    </Typography>
-                </div>
+                            </Grid>
+                        </Grid>
+                    </Grid>
+                </Grid>
+                {/*<Typography variant="h3" component="h1" className={classes.sloganSearch}>*/}
+                {/*    The Global Community of Travellers*/}
+                {/*</Typography>*/}
+                {/*</div>*/}
             </Grid>
-
-            <Grid item xs={12} lg={10}>
+            <Grid item xs={10} lg={10}>
                 <img
                     src={'https://cdn1.tripoto.com/media/filter/tst/img/319486/Image/1586846041_1584363033_contests_2.png'}
                     alt={''} className={classes.cardFirst}/>
@@ -74,7 +80,11 @@ export default function Index() {
                     src={'https://cdn1.tripoto.com/media/filter/tst/img/319486/Image/1586846041_1584363033_contests_2.png'}
                     alt={''} className={classes.cardFirst}/>
             </Grid>
+            <Grid item>
+                <Grid container>
 
+                </Grid>
+            </Grid>
         </Grid>
     );
 }
